@@ -7,21 +7,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrapper">
+    <div class="home-page">
+        <header>
+            <nav></nav>
+        </header>
+        <h3>This is easybanking.com.
+            This website is to help you save up enough to buy whatever you want.
+            To work this website simply pick your currency by clicking on the coin. Then you type in your goal. Put in how much you want to add then click the plus if you get some money or put in how much you need to subtract then press the minus if you spend your money. The pig in the middle will grow and shrink until you reach your goal. You can even change the colour of the pig!</h3>
+    </div>
+
+    <div class="piggy-page">
         <header>
             <h1>Welcome to your easy banking world</h1>
         </header>
         <h2 id = "goal">Goal: </h2>
+        <h2 id = "daily-amount">Daily amount you'd like to save: </h2>
         <div class="buttons">
             <button id = "add">+</button>
             <button id = "minus">-</button>
         </div>
+        <img src= "https://mail.google.com/mail/u/0?ui=2&ik=71d3156ac8&attid=0.1&permmsgid=msg-f:1781007361499069303&th=18b768c25481fb77&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ8hZAoxXNnY0TDxrCLsqQrB-jeORTrTf7BI11WWLk9B11qwTEMfw4YL6QBjeigto7mduV-dhx7upA1jrlQNyDsoOJeRcdJOfjD1yHQkLlf-6sIBLqkaRdnEBGk&disp=emb&realattid=ii_loa3m7nx0" id = "piggy-image">
         <div id = "color chooser">
             <button></button>
             <button></button>
             <button></button>
         </div>
     </div>
-    
+
+    <div class="current-convertion-page">
+        <form id = "pound"></form>
+        <button id = "dollar"></button>
+        <button id = "yuan"></button>
+        <button id = "yen"></button>
+    </div>
+
+    <div class="calculator-page">
+        <form id="goal"></form>
+        <form id="daily-amount"></form>
+        <h2 id="time"></h2>
+    </div>
 </body>
 </html>
