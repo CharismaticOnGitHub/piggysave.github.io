@@ -1,0 +1,5 @@
+console.log("Welcome to the saving calculator")
+let money = prompt("How much money do you make in a week?")
+let goal = prompt("What is your savings goal?")
+let time = parseFloat(goal)/parseFloat(money)
+alert(time)
