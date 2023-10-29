@@ -1,0 +1,5 @@
+print ("welcome to the magical budgeting math machine")
+moneynum = int(input("how much money do you want to budget"))
+budget = int(input("what percentage of your money would you like to budget please give you answer as a percent without the percent sight "))
+fin =moneynum  * (budget / 100)
+print (f" {fin}  is how much money you have budgeted" )
