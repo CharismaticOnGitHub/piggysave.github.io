@@ -5,46 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easy Banking App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="home-page">
         <header>
-            <nav></nav>
+            <div class = "nav-bar">
+                <i class="fa-solid fa-piggy-bank"></i>
+                <nav>
+                    <a href="calculator.html">Calculator</a>
+                    <a href="piggy.html">Piggy</a>
+                    <a href="currency.html">Currency Converter</a>
+                </nav>
+            </div>
+            <div class="image-container">
+                <img src="https://images.pexels.com/photos/12955650/pexels-photo-12955650.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" id = "piggy-image">
+            </div>
+            <h1>Welcome to piggysave.com - Your Financial Adventure Playground!</h1>
+            <h1>Save effortlessly with just two simple steps!</h1>
         </header>
-        <h3>This is easybanking.com.
-            This website is to help you save up enough to buy whatever you want.
-            To work this website simply pick your currency by clicking on the coin. Then you type in your goal. Put in how much you want to add then click the plus if you get some money or put in how much you need to subtract then press the minus if you spend your money. The pig in the middle will grow and shrink until you reach your goal. You can even change the colour of the pig!</h3>
     </div>
+<!--     
+    <div class = "intro">
+        <h1>Save effortlessly with just two simple steps!</h1>
+    </div> -->
 
-    <div class="piggy-page">
-        <header>
-            <h1>Welcome to your easy banking world</h1>
-        </header>
-        <h2 id = "goal">Goal: </h2>
-        <h2 id = "daily-amount">Daily amount you'd like to save: </h2>
-        <div class="buttons">
-            <button id = "add">+</button>
-            <button id = "minus">-</button>
-        </div>
-        <img src= "https://mail.google.com/mail/u/0?ui=2&ik=71d3156ac8&attid=0.1&permmsgid=msg-f:1781007361499069303&th=18b768c25481fb77&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ8hZAoxXNnY0TDxrCLsqQrB-jeORTrTf7BI11WWLk9B11qwTEMfw4YL6QBjeigto7mduV-dhx7upA1jrlQNyDsoOJeRcdJOfjD1yHQkLlf-6sIBLqkaRdnEBGk&disp=emb&realattid=ii_loa3m7nx0" id = "piggy-image">
-        <div id = "color chooser">
-            <button></button>
-            <button></button>
-            <button></button>
+    <div class="intro-calculator">
+        <img src="https://images.pexels.com/photos/5412432/pexels-photo-5412432.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" id = "calculator-image">
+        <div class="text">
+            <h1>Step 1:</h1>
+            <h1>Goal Time Calculator</h1>
+            <h2>Our Goal Time Calculator is a powerful yet straightforward tool designed to give you the exact timeframe it takes to reach your savings objectives.
+
+            With just a few clicks, you can input your savings goal, and our calculator will instantly tell you when you'll cross the finish line.
+            
+            Your savings goals are closer than you think!</h2>
         </div>
     </div>
 
-    <div class="current-convertion-page">
-        <form id = "pound"></form>
-        <button id = "dollar"></button>
-        <button id = "yuan"></button>
-        <button id = "yen"></button>
+    <div class="intro-piggy">
+        <h1>Step 2: Piggy Progress Tracker</h1>
+        <i class="fa-solid fa-piggy-bank"></i>
+        <h2>Once you have your saving goal, head over to our Piggy Progress Tracker, 
+            where your financial goals come to life with the help of a friendly digital piggy! 
+            Whether you're saving for your future studies, a dream video game, or that special something, 
+            our website allows you to visualize your progress in a fun and engaging way. </h2>
     </div>
 
-    <div class="calculator-page">
-        <form id="goal"></form>
-        <form id="daily-amount"></form>
-        <h2 id="time"></h2>
+    <div class="intro-currency">
+        <h1>Additional feature: Currency converter</h1>
+        <h2>Check out our currency converter! After reaching your goal, you can view how much money you've saved in another currency!</h2>
     </div>
 </body>
 </html>

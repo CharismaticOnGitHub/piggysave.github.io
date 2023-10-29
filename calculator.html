@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Time Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class = "nav-bar">
+            <i class="fa-solid fa-piggy-bank"></i>
+            <nav>
+                <a href="calculator.html">Calculator</a>
+                <a href="piggy.html">Piggy</a>
+                <a href="currency.html">Currency Converter</a>
+            </nav>
+        </div>
+        <h1>Goal Time Calculator</h1>
+        <h2>Welcome to our Goal Time Calculator! Simply input your savings goal and the daily amount you're putting aside, 
+            and our calculator will instantly provide you with the estimated time required to reach your goal. 
+            It's the easy way to plan your savings journey
+        </h2>
+
+    </header>
+    <h1>Welcome text here</h1>
+    <h2>How to use paragraph here</h2>
+    <div class="chat-window">
+        <div class="conversation">
+            <h3>Please type your savings goal</h3>
+        </div>
+        <div class="text-area">
+            <input id="user-input" type="number" placeholder="Your Message Here!" />
+            <button id = "send-btn">Send</button>
+        </div>
+    </div>
+    <div class="piggy">
+        <button id = "minus">-</button>
+        <i class="fa-solid fa-piggy-bank fa-1x" id = "small-piggy"></i>
+        <i class="fa-solid fa-piggy-bank fa-10x" id = "big-piggy"></i>
+        <button id = "add">+</button>
+        <input type="number" id = "clicks-input" value = "1" min = "1">
+    </div>
+    <div class="color-change">
+        <button></button>
+        <button></button>
+        <button></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
