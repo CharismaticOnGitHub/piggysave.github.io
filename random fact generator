@@ -1,0 +1,22 @@
+import random
+r= random.randint(1,10)
+if r == 1:
+    print("try setting a budget or just don't spend at all!")
+if r == 2:
+    print("if you have any subscriptions or memberships look at them and decide whether you really need them")
+if r== 3:
+    print("have a look at all your stuff and see if you can sell any of it")
+if r ==4:
+    print("if you want to sell things try using ebay")
+if r==5:
+    print("ask your guardian whether you can do jobs like washing up for a bit of money")
+if r ==6:
+    print("try making things like bracelets to sell to get a bit of extra money")
+if r==7:
+    print("before you buy things check it closely and decide whether you really need it.")
+if r ==8:
+    print("try seeing if anyone needs a pet sitter. If your too young see if an older person will help you")
+if r ==9:
+    print("try getting a bank account")
+if r ==10:
+    print ("try doing online paying surveys")
