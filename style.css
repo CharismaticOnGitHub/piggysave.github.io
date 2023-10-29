@@ -5,7 +5,17 @@
 body{
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300; /* TODO: fix font weight */
+    overflow-x: hidden;
+}
+
+
+#piggy-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* position: absolute;
+    z-index: -1; */
+    /* transform: translateZ(-5px) scale(1); */
 }
 
 .nav-bar {
@@ -26,11 +36,11 @@ body{
 }
 
 nav {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     gap: 1em;
-    margin-left: 1100px; /*340 px away */
+    margin-left: 100px; /*340 px away */
     color: #333;
 }
 
@@ -47,7 +57,7 @@ nav {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} 
 
 .home-page h1{
     text-align: center; 
@@ -78,6 +88,8 @@ nav {
     margin-left: 100px;
     margin-right: 340px;
 }
+/* 
+Piggy intro */
 
 .intro-piggy{
     display: flex;
@@ -97,32 +109,109 @@ nav {
     margin-right: 400px;
 }
 
+/* currency converter intro */
+
 .intro-currency{
     display:flex;
     justify-content: center;
     align-items: center;
+    margin: 500px 340px;
+    flex-wrap: flex;
 }
 
-/* Piggy */
+.intro-currency #currency-image{
+    height: 30em;
+    width: 30em;
+}
 
-.piggy {
+/* calculator.html*/
+
+header h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px 340px;
+    position: relative;
+}
+
+header h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 350px;
+    font-size: 1rem;
+    position: relative;
+}
+
+#piggy-background{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conversation{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 450px;
+    margin-top: 100px;
+    flex-direction: column;
+}
+
+.text-area{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 395px;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.ppt h1{
+    position: relative;
+    margin-top: 400px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    color: #66BA3C;
 }
 
-.piggy .fa-piggy-bank{
-    margin-right: 10px;
+.ppt h2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 340px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #66BA3C;
+}
+
+#add{
+    margin-left: 300px;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
 }
 
 #small-piggy{
-    color: blue;
-    width: 50px;
-    height: 50px;
+    color: #FFA500;
+    position: relative;
+    margin-top: 200px;
+    transition: all 1s;
+    margin-left: 150px;
 }
 
 #big-piggy{
     color: red;
     width: 500px;
     height: 500px;
+    position: relative;
+    margin-left: 200px;
 }
 

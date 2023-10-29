@@ -36,17 +36,23 @@ document.addEventListener("DOMContentLoaded", function(){
         if (input === 2) {
             dailySave = parseFloat(inputValue); 
             saveTime = savingGoal / dailySave;
-            botMessage(`${saveTime} days is what you'll need to save $${savingGoal}. Good luck!`);
-            let piggyTimes = saveTime / 10;
+            saveTimeText = Math.round(savingGoal / dailySave);
+            botMessage(`${saveTimeText} days is what you'll need to save £${savingGoal}. Good luck!`);
+
+            let piggyTimes = 144 / (saveTime)
 
             addBtn.addEventListener("click", () => {
                 const clicks = parseInt(clicksInput.value, 10)
-                const currentSize = parseInt(getComputedStyle(smallIcon).fontSize, 10);
-                console.log(currentSize)
-
+                const currentSize = parseInt(smallIcon.style.fontSize);
+                console.log(currentSize);
+                // console.log(saveTime)
+                // console.log(dailySave, saveTime)
                 if (currentSize < parseInt(getComputedStyle(bigIcon).fontSize, 10)){
-                    const newSize = currentSize + clicks;
-                    smallIcon.style.fontSize = newSize * piggyTimes + "px";
+                    const newSize = currentSize + piggyTimes;
+                    console.log(currentSize)
+                    smallIcon.style.fontSize = newSize + "px";
+                    console.log(newSize + "px")
+                    smallIcon.classList.add("fa-bounce");
                 };
             });
         }
