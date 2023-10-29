@@ -5,23 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easy Banking App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="wrapper">
+    <div class="home-page">
         <header>
-            <h1>Welcome to your easy banking world</h1>
+            <div class = "nav-bar">
+                <i class="fa-solid fa-piggy-bank"></i>
+                <nav>
+                    <a href="calculator.html">Calculator</a>
+                    <a href="piggy.html">Piggy</a>
+                    <a href="currency.html">Currency Converter</a>
+                </nav>
+            </div>
+            <div class="image-container">
+                <img src="https://images.pexels.com/photos/12955650/pexels-photo-12955650.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" id = "piggy-image">
+            </div>
+            <h1>Welcome to piggysave.com - Your Financial Adventure Playground!</h1>
+            <h1>Save effortlessly with just two simple steps!</h1>
         </header>
-        <h2 id = "goal">Goal: </h2>
-        <div class="buttons">
-            <button id = "add">+</button>
-            <button id = "minus">-</button>
-        </div>
-        <div id = "color chooser">
-            <button></button>
-            <button></button>
-            <button></button>
+    </div>
+<!--     
+    <div class = "intro">
+        <h1>Save effortlessly with just two simple steps!</h1>
+    </div> -->
+
+    <div class="intro-calculator">
+        <img src="https://images.pexels.com/photos/5412432/pexels-photo-5412432.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" id = "calculator-image">
+        <div class="text">
+            <h1>Step 1:</h1>
+            <h1>Goal Time Calculator</h1>
+            <h2>Our Goal Time Calculator is a powerful yet straightforward tool designed to give you the exact timeframe it takes to reach your savings objectives.
+
+            With just a few clicks, you can input your savings goal, and our calculator will instantly tell you when you'll cross the finish line.
+            
+            Your savings goals are closer than you think!</h2>
         </div>
     </div>
-    
+
+    <div class="intro-piggy">
+        <h1>Step 2: Piggy Progress Tracker</h1>
+        <i class="fa-solid fa-piggy-bank"></i>
+        <h2>Once you have your saving goal, head over to our Piggy Progress Tracker, 
+            where your financial goals come to life with the help of a friendly digital piggy! 
+            Whether you're saving for your future studies, a dream video game, or that special something, 
+            our website allows you to visualize your progress in a fun and engaging way. </h2>
+    </div>
+
+    <div class="intro-currency">
+        <h1>Additional feature: Currency converter</h1>
+        <h2>Check out our currency converter! After reaching your goal, you can view how much money you've saved in another currency!</h2>
+    </div>
 </body>
 </html>
