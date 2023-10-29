@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function(){
             dailySave = parseFloat(inputValue); 
             saveTime = savingGoal / dailySave;
             botMessage(`${saveTime} days is what you'll need to save $${savingGoal}. Good luck!`);
-            let piggySize = saveTime / 15;
+            let piggyTimes = saveTime / 10;
 
             addBtn.addEventListener("click", () => {
                 const clicks = parseInt(clicksInput.value, 10)
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
                 if (currentSize < parseInt(getComputedStyle(bigIcon).fontSize, 10)){
                     const newSize = currentSize + clicks;
-                    smallIcon.style.fontSize = newSize + "px";
+                    smallIcon.style.fontSize = newSize * piggyTimes + "px";
                 };
             });
         }
