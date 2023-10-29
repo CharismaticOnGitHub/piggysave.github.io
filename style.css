@@ -8,7 +8,6 @@ body{
     overflow-x: hidden;
 }
 
-
 #piggy-image{
     width: 100%;
     height: 100%;
@@ -117,6 +116,8 @@ Piggy intro */
     align-items: center;
     margin: 500px 340px;
     flex-wrap: flex;
+    background-color: #FBE255;
+    padding: 25px;
 }
 
 .intro-currency #currency-image{
